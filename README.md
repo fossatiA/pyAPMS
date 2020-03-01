@@ -28,10 +28,10 @@ To run tests and see input format:
 
 ```
 import numpy as np
-import mist as mist
+import wd_comppass as wd
 
 distr = numpy.random.rand(100,100)
-wd_scores = mist.calc_wd_matrix(distr, iteration=1000, q=0.8, plot=True)
+wd_scores = wd.calc_wd_matrix(distr, iteration=1000, q=0.8, plot=True)
 
 # filter original matrix for the wd scores which are significant
 distr[wd_scores>0]=0
